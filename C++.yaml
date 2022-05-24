@@ -1,0 +1,10 @@
+build:
+  - apt-get update
+  - apt-get -y upgrade
+  - apt-get install -y g++
+  - apt-get install -y build-essential
+  - make
+deps:
+  - chmod +x ./largeNumbers
+daemons: []
+run: ./largeNumbers
